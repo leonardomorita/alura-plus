@@ -1,0 +1,164 @@
+:root {
+    --primary-color: #FFFFFF;
+    --secondary-color: #C0C0C0;
+    --button-color: #167BF7;
+    --bg-color: #00030C;
+    --main-font: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+
+    font-family: var(--main-font);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100vh;
+}
+
+.principal {
+    align-items: center;
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+
+    /* 
+    O valor 'contain' significa que a imagem de fundo será redimensionada para
+    caber completamente dentro do elemento pai, preservando a proporção original
+    da imagem.
+    */
+    background-size: contain;
+
+    text-align: center;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--button-color);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 1em;
+    padding: 1em;
+    text-decoration: none;
+
+    color: var(--primary-color);
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.container__aviso {
+    color: var(--secondary-color);
+    font-size: 0.75rem;
+}
+
+/* Secundário */
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    color: var(--primary-color);
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--secondary-color);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+/* Dispositivos */
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    color: var(--primary-color);
+    font-size: 3rem;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+
+    /* Tirar o estilo da tag lista */
+    list-style-type: none;
+
+    margin: 5em 0;
+}
+
+.lista__item {
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+/* Rodapé */
+
+.rodape {
+    text-align: center;
+    padding: 9.0625em 7.5em 6.1875em 7.5em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    list-style-type: none;
+    margin: 2em 0 1.5em 0;
+}
+
+.rodape__lista a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.lista__link a:hover {
+    color: var(--button-color);
+}
+
+.rodape__texto {
+    color: var(--secondary-color);
+    font-size: 14px;
+}
+
+.primeiro__texto {
+    margin-bottom: 3em;
+}
