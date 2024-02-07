@@ -63,6 +63,11 @@ body {
     text-decoration: none;
 
     color: var(--primary-color);
+    transition: background-color 0.3s ease;
+}
+
+.container__botao:hover {
+    background-color: #519fff;
 }
 
 .botao_secundario {
